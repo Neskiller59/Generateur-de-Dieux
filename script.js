@@ -155,10 +155,11 @@ if (x==30) {
     console.log("Arbre du sang,Dieu du sang/lien du sang");
     sang3.style.display = "flex"
 }
-
-function zooming() {
+img.forEach((image) => {
+    image.addEventListener("click", ()=>{
+       if (window.matchMedia("(max-width: 450px)").matches) {
+           image.classList.toggle("zoom")
+       }
+    })
     
-    img.style.transform = "scale(2px)"
-    
-}
-img.addEventListener("click",zooming())
+});
