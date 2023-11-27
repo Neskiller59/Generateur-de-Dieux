@@ -31,7 +31,7 @@ const desert = document.querySelector('.item29')
 const sang3 = document.querySelector('.item30')
 
 const p = document.querySelector("p")
-const img = document.querySelector("img")
+const img = document.querySelectorAll("img")
 let x = Math.floor(Math.random()*30+1);
 console.log(x);
   
